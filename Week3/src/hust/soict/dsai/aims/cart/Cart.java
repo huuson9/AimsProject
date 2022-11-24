@@ -1,4 +1,6 @@
-package AimsProject;
+package hust.soict.dsai.aims.cart;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Cart {
 	final static int MAXN = 20;
@@ -33,7 +35,7 @@ public class Cart {
 	public float totalCost() {
 		float total = 0;
 		for(int i=0; i<qtyOrdered;i++) {
-			total+=itemOrdered[i].cost;
+			total+=itemOrdered[i].getCost();
 		}
 		return total;
 	}

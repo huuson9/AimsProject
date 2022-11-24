@@ -1,4 +1,6 @@
-package AimsProject;
+package hust.soict.dsai.aims.store;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Store {
 	final static int MAXN = 20;

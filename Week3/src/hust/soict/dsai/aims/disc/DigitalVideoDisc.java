@@ -1,4 +1,4 @@
-package AimsProject;
+package hust.soict.dsai.aims.disc;
 
 public class DigitalVideoDisc {
 	private String title;
@@ -9,7 +9,7 @@ public class DigitalVideoDisc {
 	private int id=0;
 	private static int nbDigitalVideoDics=0;
 	
-	DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+	public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
 		this.title = title;
 		this.category = category;
 		this.director = director;
