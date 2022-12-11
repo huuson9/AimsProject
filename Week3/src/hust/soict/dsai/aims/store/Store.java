@@ -1,35 +1,23 @@
 package hust.soict.dsai.aims.store;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import java.util.ArrayList;
+
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
 
 public class Store {
 	final static int MAXN = 20;
 	private int qtyOrdered = 0;
-	private DigitalVideoDisc[] itemInStore = new DigitalVideoDisc[MAXN];
+	private ArrayList<Media> itemOrdered = new ArrayList<>();
 	
-	public void addDigitalVideoDisc(DigitalVideoDisc disc) {
-		if (qtyOrdered == MAXN) {
-			System.out.println("The cart is already full");
-		}else {
-			this.itemInStore[qtyOrdered] = disc;
-			qtyOrdered++;
-			System.out.println("The disc has been added");
-		}
+	public void addMedia(Media MediaName) {
+		itemOrdered.add(MediaName);
+		qtyOrdered++;
+		System.out.println("The disc has been added");
 	}
-	
-	
-	public void removeDigitalVideoDics(DigitalVideoDisc disc) {
-		for (int i = 0; i < qtyOrdered; i++)
-		{
-			if (itemInStore[i] == disc) {
-				for (int j = i; j < qtyOrdered; j++)
-					{
-						itemInStore[j] = itemInStore[j+1];
-					}
-				qtyOrdered--;
-				System.out.println("The disc has been remove");
-			}
-		}
-		System.out.println("Nothing");
+	public void removeMedia(Media MediaName) {
+		itemOrdered.remove(MediaName);
+		qtyOrdered--;
+		System.out.println("The disc has been remove");
 	}
 }

@@ -1,7 +1,7 @@
 package hust.soict.dsai.test.cart;
 
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class CartTest {
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class CartTest {
 	//	cart.addDigitalVideoDisc(dvd3);
 	//	
 		//Test the print method
-//		cart.SearchFullById(2);
+		cart.SearchFullById(2);
 		cart.SearchFullByTitle("The Lion King");
 		//To-do: Test the search methods here
 	}
