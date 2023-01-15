@@ -19,8 +19,8 @@ public class CartTest {
 	//	cart.addDigitalVideoDisc(dvd3);
 	//	
 		//Test the print method
-		cart.SearchFullById(2);
-		cart.SearchFullByTitle("The Lion King");
+//		cart.SearchFullById(2);
+//		cart.SearchFullByTitle("The Lion King");
 		//To-do: Test the search methods here
 	}
 }

@@ -1,9 +1,9 @@
 package hust.soict.dsai.aims.media;
 
-public class Tracks implements Playable {
+public class Track implements Playable {
 	private String title;
 	private int length;
-	public Tracks(String title, int length) {
+	public Track(String title, int length) {
 		this.title=title;
 		this.length=length;
 	}
